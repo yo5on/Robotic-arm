@@ -1,111 +1,117 @@
-# Robotic-arm
-# ESP32 Robotic Arm with Record and Replay
+# 🤖 ESP32 Robotic Arm
 
-## Features
+An ESP32-based 4-DOF robotic arm controlled using an RC transmitter and receiver. The project demonstrates wireless control, servo motor manipulation, and robotic arm movement for pick-and-place applications.
 
-* Manual RC control of 4 servos
-* Learn mode to record movements
-* Replay recorded movements once
-* Continuous replay loop
-* Slow mode for smooth playback
-* Emergency stop mode
-* LED status indicators
+---
 
-## Hardware Required
+## 📸 Project Images
 
-* ESP32 Development Board
-* 4-Channel RC Receiver and Transmitter
-* 4 Servo Motors
-* 5 Push Buttons
-* 3 LEDs with 220Ω resistors
-* External 5V power supply for servos
+| Robotic Arm | Wiring Diagram |
+|-------------|----------------|
+| ![](pic1.jpeg) | ![](wiring.png) |
 
-## Pin Configuration
+---
 
-### Receiver Inputs
+## ✨ Features
 
-CH1 → GPIO34
-CH2 → GPIO35
-CH3 → GPIO32
-CH4 → GPIO33
+- Wireless RC control
+- 4 Degrees of Freedom (4-DOF)
+- Smooth servo movements
+- Pick-and-place functionality
+- Easy to modify and expand
 
-### Servo Outputs
+---
 
-Base Servo → GPIO14
-Shoulder Servo → GPIO27
-Elbow Servo → GPIO26
-Gripper Servo → GPIO25
+## 🛠 Components Used
 
-### Buttons
+| Component | Quantity |
+|------------|-----------|
+| ESP32 Development Board | 1 |
+| Servo Motors | 4 |
+| FlySky Receiver | 1 |
+| Robotic Arm Chassis | 1 |
+| 5V Power Supply | 1 |
+| Connecting Wires | As required |
 
-Reset → GPIO5
-Stop → GPIO18
-Slow → GPIO19
-Learn → GPIO17
-Replay → GPIO16
+---
 
-### LEDs
+## 🔌 Wiring
 
-Blue → GPIO21
-Green → GPIO22
-Red → GPIO23
+The complete wiring diagram is shown below:
 
-## Operating Modes
+![](wiring.png)
 
-### Normal Mode
+---
 
-Control all servos directly using the RC transmitter.
+## 📂 Repository Structure
 
-### Learn Mode
+```
+Robotic-arm/
+│
+├── code.ino
+├── README.md
+├── wiring.png
+├── pic1.jpeg
+├── pic2.jpeg
+├── pic3.jpeg
+└── 3dparts/
+```
 
-Press the Learn button once to start recording movements.
-Press it again to stop recording.
+---
 
-Green LED ON = Learn mode active.
+## 🚀 Getting Started
 
-### Replay Once
+### 1. Clone Repository
 
-Single press the Replay button to play the recorded sequence one time.
+```bash
+git clone https://github.com/yo5on/Robotic-arm.git
+```
 
-Blue LED ON = Replay once active.
+### 2. Open in Arduino IDE
 
-### Replay Loop
+Open:
 
-Double press the Replay button to continuously replay the sequence.
+```
+code.ino
+```
 
-Blue LED double blink = Replay loop active.
+### 3. Install Libraries
 
-### Slow Mode
+- ESP32 Board Package
+- ESP32Servo Library
 
-Press the Slow button to enable slow playback.
+### 4. Upload Code
 
-Red LED double blink = Slow mode active.
+1. Connect ESP32.
+2. Select correct COM port.
+3. Click Upload.
 
-### Stop Mode
+---
 
-Press the Stop button to freeze all operations.
+## 🎮 Controls
 
-Red LED ON = Stop mode active.
+| Channel | Function |
+|----------|-----------|
+| CH1 | Base Rotation |
+| CH2 | Shoulder |
+| CH3 | Elbow |
+| CH4 | Gripper |
 
-### Reset
+---
 
-Press the Reset button to:
+## 🔮 Future Improvements
 
-* Exit Stop mode
-* Return all servos to their home positions
-* Show a confirmation blink on all LEDs.
+- Inverse Kinematics
+- Mobile App Control
+- Camera Integration
+- Object Detection using AI
 
-## Default Servo Positions
+---
 
-Base: 90°
-Shoulder: 90°
-Elbow: 90°
-Gripper: 45°
+## 👨‍💻 Author
 
-## Memory Capacity
+**Yo5on**
 
-Maximum recorded steps: 200.
+Robotics and Embedded Systems Enthusiast
 
-## Power Recommendations
-
-Use an external 5V supply capable of providing at least 3A for the servos. Connect the external supply ground to the ESP32 ground.
+⭐ If you like this project, consider giving it a star!
