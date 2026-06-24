@@ -1,0 +1,14 @@
+🛠️ Components Used
+1 × ESP32 Development Board
+4 × Servo Motors
+Base Servo
+Shoulder Servo
+Elbow Servo
+Gripper Servo
+1 × FlySky RC Transmitter
+1 × FlySky Receiver
+1 × 5V–6V Power Supply/Battery Pack
+1 × Buck Converter (if using a battery above 5V)
+Jumper Wires
+Breadboard or PCB (optional)
+Robotic Arm Frame and Mounting Hardware
