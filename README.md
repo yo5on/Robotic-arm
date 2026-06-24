@@ -8,7 +8,7 @@ An ESP32-based 4-DOF robotic arm controlled using an RC transmitter and receiver
 
 | Robotic Arm    | Wiring Diagram  |
 | -------------- | --------------- |
-| ![](pic2.jpeg) | ![](wiring.png) |
+| ![](pic3.jpeg) | ![](wiring.png) |
 
 ---
 
