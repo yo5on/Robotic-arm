@@ -40,7 +40,7 @@
 
 <table align="center">
 <tr><th><samp>Robotic Arm</samp></th><th><samp>Wiring Diagram</samp></th></tr>
-<tr><td><img src="images/pic3.jpeg" alt="Robotic Arm"></td><td><img src="wiring.png" alt="Wiring Diagram"></td></tr>
+<tr><td><img src="images/pic1.jpeg" alt="Robotic Arm"></td><td><img src="wiring.png" alt="Wiring Diagram"></td></tr>
 </table>
 
 ---
