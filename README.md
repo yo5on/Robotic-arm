@@ -40,7 +40,7 @@
 
 <table align="center">
 <tr><th><samp>Robotic Arm</samp></th><th><samp>Wiring Diagram</samp></th></tr>
-<tr><td><img src="pic3.jpeg" alt="Robotic Arm"></td><td><img src="wiring.png" alt="Wiring Diagram"></td></tr>
+<tr><td><img src="images/pic3.jpeg" alt="Robotic Arm"></td><td><img src="wiring.png" alt="Wiring Diagram"></td></tr>
 </table>
 
 ---
@@ -97,13 +97,15 @@
 ```text
 Robotic-arm/
 │
-├── code.ino
+├── 3dparts/
+│   └── *.stl
+├── images/
+│   ├── pic1.jpeg
+│   ├── pic2.jpeg
+│   └── pic3.jpeg
 ├── README.md
-├── wiring.png
-├── pic1.jpeg
-├── pic2.jpeg
-├── pic3.jpeg
-└── 3dparts/
+├── code.ino
+└── wiring.png
 ```
 
 ---
