@@ -1,4 +1,14 @@
-# ESP32 Robotic Arm
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/yo5on/yo5on/main/hd-projects.svg" width="620" alt="projects"/>
+
+<samp><b>ESP32 ROBOTIC ARM</b></samp>
+
+<samp>robotics · esp32 · c/c++ · embedded systems</samp>
+
+</div>
+
+---
 
 An ESP32-based 4-DOF robotic arm controlled wirelessly using an RC transmitter and receiver. The project demonstrates embedded control, servo motor manipulation, wireless communication, and coordinated robotic movement for pick-and-place applications.
 
@@ -237,7 +247,5 @@ GitHub: https://github.com/yo5on
 ## License
 
 This project is intended for educational and personal use. You are free to explore, modify, and extend the project for your own robotics and embedded systems experiments.
-
----
 
 If you find this project useful, consider giving the repository a star.
