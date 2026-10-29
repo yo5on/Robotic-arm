@@ -177,6 +177,18 @@ cd Robotic-arm
 
 <samp>Servo limits and control ranges can be adjusted in the Arduino source code according to the mechanical configuration of the arm.</samp>
 
+<div align="center"><samp><b>ESP32 GPIO Mapping</b></samp></div>
+
+<table align="center">
+<tr><th><samp>Function</samp></th><th><samp>ESP32 GPIO</samp></th></tr>
+<tr><td><samp>RC input CH1 / CH2 / CH3 / CH4</samp></td><td><samp>34 / 35 / 32 / 33</samp></td></tr>
+<tr><td><samp>Base / Shoulder / Elbow / Gripper servo signal</samp></td><td><samp>14 / 27 / 26 / 25</samp></td></tr>
+<tr><td><samp>Reset / Stop / Slow / Learn / Replay buttons</samp></td><td><samp>5 / 18 / 19 / 17 / 16</samp></td></tr>
+<tr><td><samp>Blue / Green / Red status LEDs</samp></td><td><samp>21 / 22 / 23</samp></td></tr>
+</table>
+
+<samp>The buttons use <code>INPUT_PULLUP</code>, so each button is active-low and should connect its GPIO to GND when pressed. Power all four servos from a suitable external 5 V supply sized for their stall current; share GND with the ESP32 and do not power the servos from an ESP32 GPIO or 3.3 V pin.</samp>
+
 ---
 
 <div align="center">
